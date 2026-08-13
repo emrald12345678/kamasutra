@@ -13,5 +13,5 @@ jobs:
         with:
           node-version: 24
       - run: npm install -g firebase-tools
-      - run: echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}' > /tmp/gcp-key.json
+      - run: echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
       - run: firebase deploy --only hosting --project kamasutra-videos
